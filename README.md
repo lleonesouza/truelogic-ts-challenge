@@ -1,6 +1,6 @@
 ## Get Started 
 
-with yarn:
+### with yarn:
 ```shell
 yarn install
 yarn dev
@@ -8,12 +8,19 @@ yarn build
 yarn test
 ```
 
-with npm:
+### with npm:
 ```shell
 npm install
 npm run dev
 npm run build
 npm run test
+```
+
+:information_source: To execute tests (end2end) first start the server! :information_source:
+
+### To start after build:
+```shell
+node ./build/bundle.js
 ```
 
 ## Build and run on Docker
