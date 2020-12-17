@@ -5,7 +5,7 @@ import usecases from "./usecases";
 const { add } = usecases
 
 
-const makeUserController = () => {
+const makeControllers = () => {
     return {
         calculateSum: async (req: Request, res: Response, { }: NextFunction) => {
             try {
@@ -21,7 +21,7 @@ const makeUserController = () => {
 };
 
 // Here you can Inject Dependecies
-const controllers = makeUserController()
+const controllers = makeControllers()
 
 
 export default controllers;
